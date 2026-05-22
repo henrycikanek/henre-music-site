@@ -34,7 +34,7 @@ export default function Home({ featuredTracks = [] }: HomePageProps) {
               href="/services" 
               className="bg-white hover:bg-white/90 text-gray-900 font-semibold px-6 py-3 rounded-md transition duration-300"
             >
-              Let's Work!
+              Let&apos;s Work!
             </Link>
             <Link 
               href="/discography" 
