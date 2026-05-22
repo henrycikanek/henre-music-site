@@ -3,7 +3,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import { extractSpotifyId } from '@/utils/spotify';
 
 type SpotifyResponse = {
-  data?: any;
+  data?: unknown;
   error?: string;
 }
 

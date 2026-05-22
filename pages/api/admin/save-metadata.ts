@@ -47,12 +47,13 @@ export default async function handler(
       const discography = JSON.parse(discographyJson);
       
       // Update each track with its metadata
-      const updatedDiscography = discography.map((track: any) => {
-        if (metadata[track.id]) {
+      const updatedDiscography = discography.map((track: Record<string, unknown>) => {
+        const trackId = track.id as string;
+        if (trackId && metadata[trackId]) {
           return {
             ...track,
-            role: metadata[track.id].role,
-            category: metadata[track.id].category
+            role: metadata[trackId].role,
+            category: metadata[trackId].category
           };
         }
         return track;

@@ -29,7 +29,7 @@ export default function DiscographyPage({ discography }: DiscographyPageProps) {
     if (filter === "all") {
       setFilteredWorks(discography);
     } else {
-      setFilteredWorks(discography.filter(work => work.category === filter));
+      setFilteredWorks(discography.filter(work => work.category.split(',').includes(filter)));
     }
   }, [filter, discography]);
   
@@ -48,7 +48,7 @@ export default function DiscographyPage({ discography }: DiscographyPageProps) {
                 onClick={() => setFilter(category.id)}
                 className={`px-5 py-2 rounded-full transition ${
                   filter === category.id 
-                    ? "bg-indigo-600 text-white" 
+                    ? "bg-accent text-white" 
                     : "bg-gray-800 text-white/70 hover:bg-gray-700"
                 }`}
               >
@@ -76,7 +76,7 @@ export default function DiscographyPage({ discography }: DiscographyPageProps) {
                 
                 {/* Play overlay */}
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
-                  <div className="w-16 h-16 rounded-full bg-indigo-600 flex items-center justify-center">
+                  <div className="w-16 h-16 rounded-full bg-accent flex items-center justify-center">
                     <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M8 5v14l11-7z" />
                     </svg>
@@ -87,9 +87,9 @@ export default function DiscographyPage({ discography }: DiscographyPageProps) {
               <div className="p-4">
                 <h3 className="font-bold text-lg mb-1 truncate">{work.title}</h3>
                 <p className="text-white/70 text-sm mb-2 truncate">{work.artist}</p>
-                <div className="flex justify-between">
-                  <span className="text-xs text-white/50">{work.year}</span>
-                  <span className="text-xs text-indigo-400 font-medium">{work.role}</span>
+                <div className="flex justify-between items-start gap-2">
+                  <span className="text-xs text-white/50 flex-shrink-0">{work.year}</span>
+                  <span className="text-xs text-accent font-medium text-right leading-relaxed">{work.role}</span>
                 </div>
               </div>
             </Link>

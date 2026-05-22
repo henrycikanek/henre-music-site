@@ -6,7 +6,7 @@ type UpdateResponse = {
   success: boolean;
   message: string;
   count?: number;
-  tracks?: any[];
+  tracks?: unknown[];
   error?: string;
 }
 

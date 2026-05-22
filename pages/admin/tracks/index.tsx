@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { GetServerSideProps } from 'next';
 import { useRouter } from 'next/router';
 import fs from 'fs';
@@ -14,7 +14,7 @@ interface AdminPageProps {
 
 export default function AdminTracksPage({ discography, metadata }: AdminPageProps) {
   const router = useRouter();
-  const [tracks, setTracks] = useState<DiscographyItem[]>(discography);
+  const [tracks] = useState<DiscographyItem[]>(discography);
   const [editingTrack, setEditingTrack] = useState<string | null>(null);
   const [trackMetadata, setTrackMetadata] = useState<Record<string, { role: string; category: string }>>(metadata);
   const [loading, setLoading] = useState(false);
@@ -121,7 +121,7 @@ export default function AdminTracksPage({ discography, metadata }: AdminPageProp
             <button
               onClick={saveMetadata}
               disabled={loading}
-              className="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 rounded-md text-white disabled:opacity-50"
+              className="px-4 py-2 bg-accent hover:bg-accent-light rounded-md text-white disabled:opacity-50"
             >
               {loading ? 'Saving...' : 'Save Changes'}
             </button>
@@ -209,7 +209,7 @@ export default function AdminTracksPage({ discography, metadata }: AdminPageProp
                   <td className="py-4 px-4">
                     <button
                       onClick={() => setEditingTrack(editingTrack === track.id ? null : track.id)}
-                      className="text-indigo-400 hover:text-indigo-300"
+                      className="text-accent hover:text-accent-light"
                     >
                       {editingTrack === track.id ? 'Done' : 'Edit'}
                     </button>
@@ -224,7 +224,7 @@ export default function AdminTracksPage({ discography, metadata }: AdminPageProp
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async ({ req }) => {
+export const getServerSideProps: GetServerSideProps = async () => {
   // In a real application, check for authentication here
   // This is a simplified example without proper auth
   

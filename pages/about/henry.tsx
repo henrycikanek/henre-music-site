@@ -45,13 +45,13 @@ export default function AboutHenry() {
             <div>
               <h2 className="text-2xl font-bold mb-4">Background</h2>
               <p className="text-white/80 mb-4">
-                With over 10 years of experience in music production and engineering, I've worked across a wide range of genres 
+                With over 10 years of experience in music production and engineering, I&apos;ve worked across a wide range of genres 
                 including indie rock, electronic, hip-hop, and pop. My approach combines technical precision with creative vision 
                 to help artists achieve their unique sound.
               </p>
               <p className="text-white/80 mb-4">
                 After studying audio engineering at Berklee College of Music, I spent several years working at premier studios in 
-                Los Angeles and New York before establishing my own production space in Chicago. Throughout my career, I've had the 
+                Los Angeles and New York before establishing my own production space in Chicago. Throughout my career, I&apos;ve had the 
                 privilege of working with both emerging artists and established names in the industry.
               </p>
               <p className="text-white/80">
@@ -63,12 +63,12 @@ export default function AboutHenry() {
             <div>
               <h2 className="text-2xl font-bold mb-4">Approach</h2>
               <p className="text-white/80 mb-4">
-                My production philosophy centers on enhancing the artist's vision rather than imposing my own. I believe that 
+                My production philosophy centers on enhancing the artist&apos;s vision rather than imposing my own. I believe that 
                 the best results come from close collaboration, open communication, and a deep understanding of what makes 
                 each project unique.
               </p>
               <p className="text-white/80">
-                Whether you're looking for crystal-clear pop production, gritty lo-fi aesthetics, or something in between, 
+                Whether you&apos;re looking for crystal-clear pop production, gritty lo-fi aesthetics, or something in between, 
                 I approach each project with fresh ears and a commitment to serving the song. My goal is always to bring out 
                 the best in your music while maintaining its authenticity and emotional impact.
               </p>
@@ -76,58 +76,6 @@ export default function AboutHenry() {
           </div>
         </div>
         
-        {/* Equipment Section */}
-        <div className="mb-16">
-          <h2 className="text-2xl font-bold mb-8">Studio & Equipment</h2>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gray-900 p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-4">Hardware</h3>
-              <ul className="space-y-2 text-white/80">
-                <li>Universal Audio Apollo x8</li>
-                <li>Neve 1073 Preamps</li>
-                <li>Empirical Labs Distressor</li>
-                <li>Neumann U87 Microphone</li>
-                <li>Shure SM7B</li>
-                <li>AKG C414</li>
-                <li>Genelec 8040 Monitors</li>
-                <li>Yamaha NS10 Reference Monitors</li>
-                <li>SSL Fusion Analog Processor</li>
-                <li>Various guitar amps and keyboards</li>
-              </ul>
-            </div>
-            
-            <div className="bg-gray-900 p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-4">Software</h3>
-              <ul className="space-y-2 text-white/80">
-                <li>Pro Tools</li>
-                <li>Logic Pro X</li>
-                <li>Ableton Live</li>
-                <li>Soundtoys</li>
-                <li>FabFilter</li>
-                <li>Waves</li>
-                <li>Celemony Melodyne</li>
-                <li>Native Instruments Komplete</li>
-                <li>Slate Digital</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
-        {/* CTA */}
-        <div className="bg-gradient-to-r from-blue-900/50 to-purple-900/50 p-8 rounded-lg text-center">
-          <h2 className="text-2xl font-bold mb-4">Interested in working together?</h2>
-          <p className="max-w-2xl mx-auto mb-6 text-white/80">
-            I'm always excited to collaborate on new projects and help artists bring their vision to life.
-            Let's discuss how I can contribute to your next release.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-block bg-accent hover:bg-accent/90 text-black font-semibold px-8 py-3 rounded-md transition duration-300"
-          >
-            Get in Touch
-          </Link>
-        </div>
       </div>
     </Layout>
   );

@@ -28,20 +28,20 @@
     "category": "production"
   },
   "0zwlOjltfwKfxjbK78Zcxc": {
-    "role": "Production",
-    "category": "production"
+    "role": "Production, Mixing",
+    "category": "production,mixing"
   },
   "0OdnJx6QCm4VOmiO06dbTN": {
-    "role": "Production",
-    "category": "production"
+    "role": "Production, Writing, Mixing, Mastering",
+    "category": "production,writing,mixing,mastering"
   },
   "6VP30nXszSG4xjtWd6Zgyi": {
-    "role": "Production",
-    "category": "production"
+    "role": "Production, Writing, Mixing",
+    "category": "production,writing,mixing"
   },
   "7GifEikb8Wxcb7lGzFHRY6": {
-    "role": "Production",
-    "category": "production"
+    "role": "Production, Writing",
+    "category": "production,writing"
   },
   "67OmVCC2USEWabs4XLjsRC": {
     "role": "Production",
@@ -52,8 +52,8 @@
     "category": "production"
   },
   "4V6FggKxzjdeiWxS7OP6tq": {
-    "role": "Production",
-    "category": "production"
+    "role": "Production, Writing",
+    "category": "production,writing"
   },
   "2xDBxK2PT1TAxjPIIn9RQc": {
     "role": "Production",
@@ -64,12 +64,12 @@
     "category": "production"
   },
   "3Gv8ft9qF6XFzWP8vKrNS8": {
-    "role": "Production",
-    "category": "production"
+    "role": "Production, Writing",
+    "category": "production,writing"
   },
   "2N7EdFcUM2BrGtnQIy9DaA": {
-    "role": "Production",
-    "category": "production"
+    "role": "Production, Writing",
+    "category": "production,writing"
   },
   "1qJQ19YelMgCwKzCksuAuv": {
     "role": "Production",
@@ -88,15 +88,47 @@
     "category": "production"
   },
   "5UfQqOpIZ9t5jPUb1UJimw": {
-    "role": "Production",
-    "category": "production"
+    "role": "Production, Writing",
+    "category": "production,writing"
   },
   "2sm4yTqsceRiGUtKHG99a6": {
+    "role": "Production, Writing",
+    "category": "production,writing"
+  },
+  "5ueE9MNqnPKpUl19PzI4X7": {
+    "role": "Production, Writing",
+    "category": "production,writing"
+  },
+  "7t4N5i1fbg7QMPAMHp2CK1": {
+    "role": "Production, Writing, Mixing",
+    "category": "production,writing,mixing"
+  },
+  "5nuNdm8A47fAfUPoN9AMJQ": {
     "role": "Production",
     "category": "production"
   },
-  "5ueE9MNqnPKpUl19PzI4X7": {
+  "7FdmFE83HwBNH6vmjODdi1": {
     "role": "Production",
     "category": "production"
+  },
+  "2uVhDVhCRhye33a9blkdKu": {
+    "role": "Production",
+    "category": "production"
+  },
+  "3dfSGJOi4ui4ypDWltzUS5": {
+    "role": "Production",
+    "category": "production"
+  },
+  "3Fg9fW4YQYEgxAB9SYYd9K": {
+    "role": "Production",
+    "category": "production"
+  },
+  "4ZUNsrg67FyS47d8eLRV2I": {
+    "role": "Production",
+    "category": "production"
+  },
+  "0fNpf18KYTJJeF8i2lkL3O": {
+    "role": "Production, Mixing, Mastering",
+    "category": "production,mixing,mastering"
   }
 }

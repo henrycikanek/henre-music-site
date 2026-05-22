@@ -2,7 +2,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 type PlaylistResponse = {
-  tracks?: any[];
+  tracks?: unknown[];
   error?: string;
 }
 
@@ -53,7 +53,7 @@ export default async function handler(
     const data = await response.json();
     
     // Extract just the tracks from the response
-    const tracks = data.items.map((item: any) => item.track);
+    const tracks = data.items.map((item: Record<string, unknown>) => item.track);
     
     return res.status(200).json({ tracks });
     

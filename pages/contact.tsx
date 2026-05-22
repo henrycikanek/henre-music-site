@@ -11,7 +11,7 @@ export default function ContactPage() {
   
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
-  const [submitError, setSubmitError] = useState(false);
+  const [submitError] = useState(false);
   
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -58,7 +58,7 @@ export default function ContactPage() {
             
             {submitSuccess ? (
               <div className="bg-green-800/40 border border-green-800 text-white p-4 rounded-lg mb-6">
-                Your message has been sent successfully! I'll get back to you as soon as possible.
+                Your message has been sent successfully! I&apos;ll get back to you as soon as possible.
               </div>
             ) : submitError ? (
               <div className="bg-red-800/40 border border-red-800 text-white p-4 rounded-lg mb-6">
@@ -111,6 +111,7 @@ export default function ContactPage() {
                   <option value="Mixing">Mixing</option>
                   <option value="Mastering">Mastering</option>
                   <option value="Production">Production</option>
+                  <option value="Vocal Engineering">Vocal Engineering</option>
                   <option value="Consultation">Consultation</option>
                   <option value="Other">Other</option>
                 </select>
@@ -135,7 +136,7 @@ export default function ContactPage() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`w-full px-6 py-3 text-black bg-accent rounded-md font-medium transition-colors ${
+                className={`w-full px-6 py-3 text-gray-900 bg-accent rounded-md font-medium transition-colors ${
                   isSubmitting ? "bg-accent/70" : "hover:bg-accent/90"
                 }`}
               >
