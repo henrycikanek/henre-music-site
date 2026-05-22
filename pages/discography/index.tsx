@@ -36,7 +36,7 @@ export default function DiscographyPage({ discography }: DiscographyPageProps) {
   return (
     <Layout>
       <div className="max-w-6xl mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold mb-8">Discography</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold mb-8">Discography</h1>
         
         {/* Category filter */}
         <div className="mb-12">

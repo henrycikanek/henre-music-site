@@ -61,8 +61,8 @@ export default function TrackPage({ track }: TrackPageProps) {
         
         <div className="max-w-4xl mx-auto">
           {/* Cover + Info */}
-          <div className="flex flex-col md:flex-row gap-8 items-start mb-10">
-            <div className="w-64 h-64 relative flex-shrink-0">
+          <div className="flex flex-col md:flex-row gap-6 sm:gap-8 items-center md:items-start mb-10">
+            <div className="w-48 h-48 sm:w-64 sm:h-64 relative flex-shrink-0">
               <Image 
                 src={track.coverArt || "/images/covers/placeholder.jpg"} 
                 alt={`${track.title} by ${track.artist}`}
@@ -70,10 +70,10 @@ export default function TrackPage({ track }: TrackPageProps) {
                 className="object-cover rounded-lg"
               />
             </div>
-            <div className="flex-1 pt-2">
-              <h1 className="text-4xl font-bold mb-2">{track.title}</h1>
-              <h2 className="text-2xl text-white/80 mb-4">{track.artist}</h2>
-              <div className="flex items-center gap-6 text-base mb-2">
+            <div className="flex-1 pt-2 text-center md:text-left">
+              <h1 className="text-2xl sm:text-4xl font-bold mb-2">{track.title}</h1>
+              <h2 className="text-xl sm:text-2xl text-white/80 mb-4">{track.artist}</h2>
+              <div className="flex items-center justify-center md:justify-start gap-6 text-base mb-2">
                 <span className="text-white/60">{track.year}</span>
                 <span><span className="text-white/60">Role: </span><span className="text-accent font-medium">{track.role}</span></span>
               </div>
@@ -98,11 +98,11 @@ export default function TrackPage({ track }: TrackPageProps) {
             <iframe 
               src={`https://open.spotify.com/embed/track/${track.spotifyEmbedId}`}
               width="100%" 
-              height="352" 
+              height="152" 
               frameBorder="0" 
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
               loading="lazy"
-              className="rounded-lg"
+              className="rounded-lg sm:h-[352px]"
             ></iframe>
           </div>
         </div>

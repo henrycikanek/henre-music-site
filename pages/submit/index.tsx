@@ -59,7 +59,7 @@ export default function SubmitProject() {
   return (
     <Layout>
       <div className="max-w-6xl mx-auto px-4 py-16">
-        <div className="grid lg:grid-cols-5 gap-12">
+        <div className="grid lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Form — left 3 cols */}
           <div className="lg:col-span-3">
             <h1 className="text-3xl font-bold text-accent mb-8 tracking-wide">
@@ -76,7 +76,7 @@ export default function SubmitProject() {
               {/* Name row */}
               <div>
                 <p className="font-medium mb-1">Name</p>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm text-white/60 mb-1">
                       First Name <span className="text-white/40">(required)</span>

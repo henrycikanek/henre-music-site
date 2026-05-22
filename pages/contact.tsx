@@ -48,8 +48,8 @@ export default function ContactPage() {
   return (
     <Layout>
       <div className="max-w-6xl mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold mb-2">Contact</h1>
-        <p className="text-lg text-white/80 mb-12">Get in touch for inquiries, collaborations, or project quotes.</p>
+        <h1 className="text-3xl sm:text-4xl font-bold mb-2">Contact</h1>
+        <p className="text-base sm:text-lg text-white/80 mb-8 sm:mb-12">Get in touch for inquiries, collaborations, or project quotes.</p>
         
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Form */}

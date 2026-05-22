@@ -58,26 +58,26 @@ export default function Navbar() {
       
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link href="/discography" className="block px-3 py-2 hover:text-accent font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+        <div className="md:hidden border-t border-white/10">
+          <div className="px-4 py-4 space-y-1 bg-gray-950">
+            <Link href="/discography" className="block px-3 py-3 hover:text-accent hover:bg-white/5 rounded-md font-medium transition" onClick={() => setIsMobileMenuOpen(false)}>
               DISCOGRAPHY
             </Link>
 
-            <Link href="/services" className="block px-3 py-2 hover:text-accent font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+            <Link href="/services" className="block px-3 py-3 hover:text-accent hover:bg-white/5 rounded-md font-medium transition" onClick={() => setIsMobileMenuOpen(false)}>
               SERVICES
             </Link>
             
-            <Link href="/submit" className="block px-3 py-2 hover:text-accent font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+            <Link href="/submit" className="block px-3 py-3 hover:text-accent hover:bg-white/5 rounded-md font-medium transition" onClick={() => setIsMobileMenuOpen(false)}>
               SUBMIT PROJECT
             </Link>
             
             {/* TODO: Re-enable About page after content is ready */}
-            {/* <Link href="/about/henry" className="block px-3 py-2 hover:text-accent font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+            {/* <Link href="/about/henry" className="block px-3 py-3 hover:text-accent hover:bg-white/5 rounded-md font-medium transition" onClick={() => setIsMobileMenuOpen(false)}>
               ABOUT
             </Link> */}
             
-            <Link href="/contact" className="block px-3 py-2 hover:text-accent font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+            <Link href="/contact" className="block px-3 py-3 hover:text-accent hover:bg-white/5 rounded-md font-medium transition" onClick={() => setIsMobileMenuOpen(false)}>
               CONTACT
             </Link>
           </div>

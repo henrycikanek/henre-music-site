@@ -177,7 +177,7 @@ export default function UploadPage() {
           onDragLeave={() => setIsDragging(false)}
           onDrop={onDrop}
           onClick={() => inputRef.current?.click()}
-          className={`border-2 border-dashed rounded-lg p-12 text-center cursor-pointer transition-colors ${
+          className={`border-2 border-dashed rounded-lg p-6 sm:p-12 text-center cursor-pointer transition-colors ${
             isDragging
               ? "border-accent bg-accent/10"
               : "border-gray-600 hover:border-gray-400"
@@ -196,8 +196,8 @@ export default function UploadPage() {
               d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5"
             />
           </svg>
-          <p className="text-white/70 text-lg mb-1">
-            Drag & drop files here, or click to browse
+          <p className="text-white/70 text-base sm:text-lg mb-1">
+            Drag & drop files here, or tap to browse
           </p>
           <p className="text-white/40 text-sm">
             WAV, AIFF, FLAC, MP3, or any audio format

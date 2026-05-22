@@ -46,10 +46,10 @@ export default function PayPage() {
   return (
     <Layout>
       <div className="max-w-6xl mx-auto py-16 px-4">
-        <h1 className="text-4xl font-bold mb-2">Services</h1>
-        <p className="text-lg text-white/80 mb-12">Select a service and purchase securely.</p>
+        <h1 className="text-3xl sm:text-4xl font-bold mb-2">Services</h1>
+        <p className="text-base sm:text-lg text-white/80 mb-8 sm:mb-12">Select a service and purchase securely.</p>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {serviceOptions.map(service => {
             const IconComponent = service.icon;
             return (
